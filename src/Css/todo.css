@@ -1,0 +1,29 @@
+.todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 4px solid #ccc;
+}
+
+.todo-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    /* Metin veya checkbox tıklanabilir */
+}
+
+.todo-content.completed .todo-text {
+    text-decoration: line-through;
+    /* Çizgi */
+    color: #999;
+    /* Silik renk */
+    transition: all 0.3s ease;
+    /* Geçiş efekti */
+}
+
+.icons {
+    display: flex;
+    gap: 5px;
+}
